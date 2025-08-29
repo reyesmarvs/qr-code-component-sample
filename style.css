@@ -1,0 +1,60 @@
+:root {
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(216, 15%, 48%);
+  --background-color: #d5e1ef;
+  --font-semi-bold: 400;
+  --font-bold: 700;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit, sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  width: 90%;
+  max-width: 320px;
+  height: auto;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  padding: 16px 16px 40px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.container .card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 95%;
+  margin: 0 auto;
+}
+.container .card .text h1 {
+  font-size: clamp(14px, 5vw, 22px);
+  font-weight: var(--font-bold);
+}
+.container .card .text p {
+  color: var(--secondary-color);
+  font-size: clamp(12px, 5vw, 16px);
+}/*# sourceMappingURL=style.css.map */
