@@ -53,6 +53,7 @@
 .container .card .text h1 {
   font-size: clamp(14px, 5vw, 22px);
   font-weight: var(--font-bold);
+  color: hsl(218, 44%, 22%);
 }
 .container .card .text p {
   color: var(--secondary-color);
